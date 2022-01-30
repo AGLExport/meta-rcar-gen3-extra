@@ -11,6 +11,7 @@ inherit packagegroup
 
 PACKAGES = " \
     packagegroup-multimedia-userland \
+    packagegroup-multimedia-kernel-modules \
 "
 
 RDEPENDS_packagegroup-multimedia-userland = " \
@@ -18,4 +19,15 @@ RDEPENDS_packagegroup-multimedia-userland = " \
     omx-user-module \
     alsa-utils \
     alsa-tools \
+"
+
+RDEPENDS_packagegroup-multimedia-kernel-modules = " \
+    kernel-module-gles \
+    kernel-module-mmngr \
+    kernel-module-mmngrbuf \
+    kernel-module-qos \
+    kernel-module-uvcs-drv \
+    kernel-module-vsp2driver \
+    kernel-module-vspm \
+    kernel-module-vspmif \
 "
