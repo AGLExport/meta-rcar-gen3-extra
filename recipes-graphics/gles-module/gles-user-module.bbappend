@@ -1,3 +1,4 @@
+FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 RDEPENDS:${PN}:remove = "kernel-module-gles"
 
 PACKAGES:prepend = "\

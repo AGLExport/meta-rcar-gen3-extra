@@ -1,0 +1,10 @@
+[Unit]
+Description=PowerVR consumer services
+
+[Service]
+ExecStart=/sbin/modprobe -q pvrsrvkm
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
