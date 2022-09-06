@@ -8,7 +8,7 @@ COMPATIBLE_MACHINE = "(salvator-x|ulcb|ebisu|draak)"
 PACKAGES = " \
     packagegroup-weston-compositor \
     packagegroup-qt-compositor \
-    packagegroup-graphics-kernel-modules \
+    packagegroup-graphics-kernel \
 "
 
 PR = "r0"
@@ -35,6 +35,6 @@ RDEPENDS_packagegroup-qt-compositor = " \
     gles-user-module \
 "
 
-RDEPENDS_packagegroup-graphics-kernel-modules = " \
+RDEPENDS_packagegroup-graphics-kernel = " \
     kernel-module-gles \
 "

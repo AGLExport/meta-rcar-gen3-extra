@@ -1,7 +1,7 @@
-From d39ae6c8cdbab2797f5603abe0eb2bacde881951 Mon Sep 17 00:00:00 2001
+From ba383c21086f5de0bcfc61e8ad05171151982252 Mon Sep 17 00:00:00 2001
 From: Damian Hobson-Garcia <dhobsong@igel.co.jp>
 Date: Tue, 16 Mar 2021 19:54:39 +0900
-Subject: [PATCH] drm: enable dumb buffer ops for render nodes
+Subject: [PATCH 1/2] drm: enable dumb buffer ops for render nodes
 
 The EGL modules that use render nodes on R-Car use these operations
 to create and manage buffers that can be used for scanout on R-Car.
@@ -10,10 +10,10 @@ to create and manage buffers that can be used for scanout on R-Car.
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/drivers/gpu/drm/drm_ioctl.c b/drivers/gpu/drm/drm_ioctl.c
-index fcd728d7cf72..e293cf7bc35c 100644
+index 789ee65ac1f5..9a2c76524c02 100644
 --- a/drivers/gpu/drm/drm_ioctl.c
 +++ b/drivers/gpu/drm/drm_ioctl.c
-@@ -676,9 +676,9 @@ static const struct drm_ioctl_desc drm_ioctls[] = {
+@@ -677,9 +677,9 @@ static const struct drm_ioctl_desc drm_ioctls[] = {
  	DRM_IOCTL_DEF(DRM_IOCTL_MODE_RMFB, drm_mode_rmfb_ioctl, 0),
  	DRM_IOCTL_DEF(DRM_IOCTL_MODE_PAGE_FLIP, drm_mode_page_flip_ioctl, DRM_MASTER),
  	DRM_IOCTL_DEF(DRM_IOCTL_MODE_DIRTYFB, drm_mode_dirtyfb_ioctl, DRM_MASTER),
@@ -27,5 +27,5 @@ index fcd728d7cf72..e293cf7bc35c 100644
  	DRM_IOCTL_DEF(DRM_IOCTL_MODE_OBJ_SETPROPERTY, drm_mode_obj_set_property_ioctl, DRM_MASTER),
  	DRM_IOCTL_DEF(DRM_IOCTL_MODE_CURSOR2, drm_mode_cursor2_ioctl, DRM_MASTER),
 -- 
-2.17.1
+2.25.1
 

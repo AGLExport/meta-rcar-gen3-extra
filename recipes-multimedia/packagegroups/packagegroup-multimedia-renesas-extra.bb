@@ -11,7 +11,7 @@ inherit packagegroup
 
 PACKAGES = " \
     packagegroup-multimedia-userland \
-    packagegroup-multimedia-kernel-modules \
+    packagegroup-multimedia-kernel \
 "
 
 RDEPENDS_packagegroup-multimedia-userland = " \
@@ -21,7 +21,7 @@ RDEPENDS_packagegroup-multimedia-userland = " \
     alsa-tools \
 "
 
-RDEPENDS_packagegroup-multimedia-kernel-modules = " \
+RDEPENDS_packagegroup-multimedia-kernel = " \
     kernel-module-gles \
     kernel-module-mmngr \
     kernel-module-mmngrbuf \
